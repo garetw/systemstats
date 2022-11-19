@@ -14,7 +14,7 @@ function info(modules) {
   try {
     return Promise.all(modules.map((m) => sysinfo[m]()))
   } catch (error) {
-    log(error.toStringa())
+    log(error.toString())
   }
 }
 
