@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha index.test.js",
+    "lint": "prettier --write *.js",
+    "eslint": "eslint --fix",
+    "lint-watch": "nodemon --exec \"(npm run lint) && (npm run eslint) && (npm run test)\""
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "systeminformation": "^5.14.0"
+  }
+}
